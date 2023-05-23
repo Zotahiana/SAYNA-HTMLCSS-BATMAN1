@@ -11,6 +11,13 @@
     --yellow-light: #f8f184;
     --bleu-color: #19587d;
     --white-color: #ffffff;
+    --gradient-White: #eddebf67;
+    --gradient-red: #89000978;
+    --black-color: #000;
+    --grey-color: #C4C4C4;
+    --gradient-white: #eddebf38;
+    --gradient-grey: #19587d70;
+
 
 }
 *{
@@ -36,7 +43,7 @@ button{
 body{
     background-color: black;
     color: white;
-    font-family: 'Space-Grotesk';
+    font-family: 'Space Grotesk';
     font-weight: 300;
 }
 
@@ -74,11 +81,217 @@ nav ul a:hover{
     background-position: top center;
     background-repeat: no-repeat;
     background-color: black;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 400px;
+}
+
+#hero .titre{
+    margin: 25px 0;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    background: linear-gradient(
+        80deg,var(--gradient-white), var(--gradient-red)
+
+    );
+    box-shadow: var(--black-color) 15px 15px 50px;
+}
+
+#hero .flèche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 220px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    top: 200px;
+
+}
+
+.scroll .social{
+    margin-top: 30px;
+
 }
 
 /*Design de la section batman personnage */
 
+#Batman-cinéma, #batman-justice-league{
+    margin-top: 70px;
+}
+
 .batman-personnage{
     display: flex;
     justify-content: space-between;
+}
+
+#Batman-cinéma .titre, #batman-justice-league .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#Batman-cinéma .description, #batman-justice-league .description{
+    margin-bottom: 70px;
+    text-align: justify;
+    width: 80%;
+    font-size: 20px;
+    
+}
+#Batman-cinéma .personnage-info{
+    text-align: center;
+
+}
+
+/*Design de la partie multimédia */
+
+#multimédia button{
+    position: relative;
+    background: none;
+    border: none;
+    top: 160px
+}
+
+#multimédia button.right{
+    right: -85%;
+}
+
+#multimédia .slider-multimédia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+#multimédia .slider-image{
+    width: 100%;
+
+}
+#multimédia .slider-content{
+    padding: 15px;
+    background: linear-gradient(
+         var(--gradient-white), var(--gradient-grey)
+    );
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#multimédia p{
+    font-size: 14px;
+}
+
+#multimédia .yellow{
+    color: var(--yellow-color);
+}
+
+/*Design de la contact - formulaire */
+
+#contact{
+    background: linear-gradient(
+         var(--gradient-white), var(--gradient-grey)
+    );
+    padding: 70px 0;
+
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+
+}
+
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type='email'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(206, 190, 190);
+    background-color: transparent;
+    padding: 5px 0;
+}
+
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(206, 190, 190);
+}
+
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type='radio']{
+    opacity: 0;
+}
+
+.btn-group label{
+    cursor: pointer;
+    border: 2px solid;
+    padding: 10px;
+    -o-border-image: linear-gradient(
+        69deg, --gradient-grey, blue    
+    ) l;
+    border-image: linear-gradient(
+        69deg, --gradient-grey, blue    
+    ) l;
+    font-size: 12px;
+}
+
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 35px auto;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+#citation{
+    margin: 90px;
+}
+
+#citation .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citation .citation-auteur{
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'radjhani';
+
+
 }
