@@ -78,7 +78,11 @@ nav ul a{
     -webkit-filter:invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%) ;
     filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
 }
-.social-logo:hover{
+.logo-f:hover{
+    -webkit-filter:invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%) ;
+    filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+}
+.social:hover{
     -webkit-filter:invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%) ;
     filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
 }
@@ -135,7 +139,7 @@ nav ul a:hover{
 #hero .flèche{
     display: block;
     margin: 0 auto;
-    margin-top: 250px;
+    margin-top: 30px;
 }
 
 .scroll {
@@ -155,7 +159,7 @@ nav ul a:hover{
 
 /*Design de la partie batman personnage */
 
-#Batman-cinéma, #batman-justice-league{
+#Batman-cinéma{
     margin-top: 70px;
 }
 
@@ -164,13 +168,14 @@ nav ul a:hover{
     justify-content: space-between;
 }
 
-#Batman-cinéma .titre, #batman-justice-league .titre{
+#Batman-cinéma .titre{
     text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
+    padding-top: 70px;
 }
 
-#Batman-cinéma .description, #batman-justice-league .description{
+#Batman-cinéma .description{
     margin-bottom: 70px;
     text-align: justify;
     width: 80%;
@@ -196,7 +201,8 @@ nav ul a:hover{
 #némésis .titre{
     text-transform: uppercase;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 30px 0;
+    padding-top: 70px;
 }
 
 #némésis .description{
@@ -225,7 +231,8 @@ nav ul a:hover{
 #alliés .titre{
     text-transform: uppercase;
     font-weight: bold;
-    margin: 40px 0;
+    margin: 30px 0;
+    padding-top: 200px;
 }
 
 #alliés .description{
@@ -237,10 +244,52 @@ nav ul a:hover{
 }
 #alliés .personnage-info{
     text-align: center;
+}
 
+#alliés .logo-12{
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: auto;
+    float: right;
+    background-position: right; 
+}
+.container{
+    position: relative;
+    height: 100%;
+}
+
+
+/*Design justice league*/
+
+#batman-justice-league{
+    margin-top: 70px;
+}
+
+#batman-justice-league .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 60px;
+    margin: 70px; 
+}
+
+#batman-justice-league .description{
+    margin-bottom: 70px;
+    text-align: justify;
+    width: 80%;
+    font-size: 20px;
+    margin: 70px;
+    padding-top: 0 auto;
+    
 }
 
 /*Design de la partie multimédia */
+#multimédia .titre{
+    padding-top: 70px;
+}
+
 
 #multimédia button{
     position: relative;
@@ -256,7 +305,10 @@ nav ul a:hover{
 #multimédia .slider-multimédia{
     display: flex;
     width: 60%;
-    margin: 40px auto;
+    margin: 10px auto;
+    padding: 30px;
+    font-family: 'Space Grotesk';
+    
 }
 #multimédia .slider-image{
     width: 100%;
@@ -269,10 +321,11 @@ nav ul a:hover{
     );
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+   
 }
 
 #multimédia p{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #multimédia .yellow{
