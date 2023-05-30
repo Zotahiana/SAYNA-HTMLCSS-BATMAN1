@@ -44,6 +44,10 @@ body{
     color: white;
     font-family: 'Space Grotesk';
     font-weight: 300;
+    background-image: url(../Illustrations/Bathome12.png);
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: 850px 2960px;
 }
 
 .up-bar{
@@ -52,6 +56,25 @@ body{
     top: 132px;
     width: 85%;
     left: 102px;
+}
+.left-bar{
+    background-color: #BCBBBD 1px solid;
+    height: 7900px;
+    left: 85%;
+    top: 0px;
+    border-left: 1px solid #BCBBBD;
+    position: absolute;
+    margin-left: 102px
+}
+
+.right-bar{
+    background-color: #BCBBBD 1px solid;
+    height: 7900px;
+    right: 85%;
+    top: 0px;
+    border-left: 1px solid #BCBBBD;
+    position: absolute;
+    margin-right: 102px
 }
 
 /*Design de la navigation*/
@@ -206,6 +229,7 @@ nav ul a:hover{
     padding-top: 70px;
 }
 
+
 #némésis .description{
     margin-bottom: 70px;
     text-align: justify;
@@ -233,7 +257,7 @@ nav ul a:hover{
     text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
-    padding-top: 200px;
+    padding-top: 350px;
 }
 
 #alliés .description{
@@ -241,22 +265,13 @@ nav ul a:hover{
     text-align: justify;
     width: 80%;
     font-size: 20px;
-    
+
 }
+
 #alliés .personnage-info{
     text-align: center;
 }
 
-#alliés .logo-12{
-    position: absolute;
-    flex-direction: column;
-    top: 0;
-    right: 0;
-    width: 35%;
-    height: auto;
-    float: right;
-    background-position: right; 
-}
 .container{
     position: relative;
     height: 100%;
@@ -413,18 +428,10 @@ input[type='submit']{
     margin: 35px auto;
     padding: 15px 0;
     cursor: pointer;
-}
-
-#popupbox{
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    background-color: #BCBBBD;
-    padding: 20px;
-    border-radius: 5px;
+    color: var(--gradient-White);
+    background: linear-gradient(
+        80deg,var(--gradient-white), var(--gradient-red)
+    );
 }
 
 #citations{
