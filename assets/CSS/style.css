@@ -87,6 +87,7 @@ nav ul a{
     filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
 }
 
+
 nav ul a:hover{
      color: var(--yellow-color);
 }
@@ -349,13 +350,13 @@ nav ul a:hover{
 #contact h2{
     text-align: center;
     font-size: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 65px;
 
 }
 
 #contact .titre{
     display: block;
-    margin: 28px 0;
+    margin: 25px 0;
 }
 
 #contact .form input[type='email'], textarea{
@@ -367,16 +368,18 @@ nav ul a:hover{
     border-bottom: 2px solid rgb(206, 190, 190);
     background-color: transparent;
     padding: 5px 0;
+    margin: 20px 0;
 }
 
 #contact .news{
-    margin: 15px 0;
+    margin: 20px 0;
     border-bottom: 2px solid rgb(206, 190, 190);
 }
 
 #contact .icon img{
     transform: rotate(90deg);
-    width: 20px;
+    width: 12px;
+    cursor: pointer;
 }
 ::placeholder{
     color: #ffffff;
@@ -410,6 +413,18 @@ input[type='submit']{
     margin: 35px auto;
     padding: 15px 0;
     cursor: pointer;
+}
+
+#popupbox{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #BCBBBD;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 #citations{
