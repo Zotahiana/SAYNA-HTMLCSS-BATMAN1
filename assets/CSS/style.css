@@ -46,21 +46,23 @@ body{
     font-weight: 300;
     background-image: url(../Illustrations/Bathome12.png);
     background-repeat: no-repeat;
-    background-size: 38%;
-    background-position: 850px 2960px;
+    background-size: 35%;
+    background-position: 887px 2850px;
 }
 
 .up-bar{
     border-top: #BCBBBD 1px solid;
     position: relative;
     top: 132px;
-    width: 85%;
+    width: 87%;
     left: 102px;
+
 }
+
 .left-bar{
     background-color: #BCBBBD 1px solid;
-    height: 7900px;
-    left: 85%;
+    height: 8000px;
+    left: 87%;
     top: 0px;
     border-left: 1px solid #BCBBBD;
     position: absolute;
@@ -69,7 +71,7 @@ body{
 
 .right-bar{
     background-color: #BCBBBD 1px solid;
-    height: 7900px;
+    height: 8000px;
     right: 85%;
     top: 0px;
     border-left: 1px solid #BCBBBD;
@@ -108,6 +110,9 @@ nav ul a{
 .social:hover{
     -webkit-filter:invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%) ;
     filter: invert(4%) sepia(100%) saturate(1498%) hue-rotate(355deg) brightness(109%) contrast(103%);
+}
+.image-container:hover{
+    transform: scale(1.1);
 }
 
 
@@ -168,7 +173,7 @@ nav ul a:hover{
 #hero .flèche{
     display: block;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 250px;
 }
 
 .scroll {
@@ -176,15 +181,17 @@ nav ul a:hover{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 50px;
+    right: 20px;
     top: 200px;
 
 }
 
 .scroll .social{
     margin-top: 30px;
+    cursor: pointer;
 
 }
+
 
 /*Design de la partie batman personnage */
 
@@ -195,7 +202,17 @@ nav ul a:hover{
 .batman-personnage{
     display: flex;
     justify-content: space-between;
+
 }
+
+.image-container{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
 
 #Batman-cinéma .titre{
     text-transform: uppercase;
@@ -213,6 +230,7 @@ nav ul a:hover{
 }
 #Batman-cinéma .personnage-info{
     text-align: center;
+    padding: 20px;
 
 }
 
@@ -225,6 +243,14 @@ nav ul a:hover{
 .némésis-personnage{
     display: flex;
     justify-content: space-between;
+}
+
+.image-container{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 #némésis .titre{
@@ -249,13 +275,14 @@ nav ul a:hover{
 }
 #némésis .personnage-info{
     text-align: center;
+    padding: 20px;
 
 }
 
 /*Design de la partie alliés*/
 
 #Alliés{
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 .alliés-personnage{
@@ -263,11 +290,19 @@ nav ul a:hover{
     justify-content: space-between;
 }
 
+.image-container{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
 #alliés .titre{
     text-transform: uppercase;
     font-weight: bold;
     margin: 30px 0;
-    padding-top: 350px;
+    padding-top: 120px;
 }
 
 #alliés .description{
@@ -280,25 +315,21 @@ nav ul a:hover{
 
 #alliés .personnage-info{
     text-align: center;
-}
-
-.container{
-    position: relative;
-    height: 100%;
+    padding: 20px;
 }
 
 
 /*Design justice league*/
 
 #batman-justice-league{
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 #batman-justice-league .titre{
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 40px;
-    margin: 70px; 
+    padding: -20px;
+    margin: 65px; 
 }
 
 #batman-justice-league .description{
@@ -311,9 +342,17 @@ nav ul a:hover{
     
 }
 
+.justice-league{
+    position: absolute;
+}
+
 /*Design de la partie multimédia */
 #multimédia .titre{
     padding-top: 70px;
+}
+
+#multimédia{
+    padding-top: 15cm;
 }
 
 
@@ -368,7 +407,7 @@ nav ul a:hover{
     background: linear-gradient(
          var(--gradient-white), var(--gradient-grey)
     );
-    padding: 70px 0;
+    padding: 70px 0; 
 
 }
 #contact .form{
@@ -395,22 +434,40 @@ nav ul a:hover{
     border-top: none;
     border-right: none;
     border-left: none;
-    width: 80%;
+    width: 100%;
     border-bottom: 2px solid rgb(206, 190, 190);
     background-color: transparent;
     padding: 5px 0;
     margin: 20px 0;
 }
 
+#contact .form input[type='news'], textarea{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid rgb(206, 190, 190);
+    background-color: transparent;
+    padding: 5px 0;
+    margin: -25px 0;
+    padding-top: 50px;
+}
+
 #contact .news{
     margin: 20px 0;
     border-bottom: 2px solid rgb(206, 190, 190);
+    width: 100%;
+    
 }
 
 #contact .icon img{
     transform: rotate(90deg);
-    width: 12px;
+    width: 15px;
     cursor: pointer;
+    position: relative;
+    background: none;
+    right: -95%;
 }
 ::placeholder{
     color: #ffffff;
@@ -435,13 +492,11 @@ nav ul a:hover{
     font-size: 12px;
     
 }
-    
-
 
 input[type='submit']{
     display: block;
     width: 230px;
-    margin: 35px auto;
+    margin: 70px auto;
     padding: 15px 0;
     cursor: pointer;
     color: var(--gradient-White);
@@ -451,6 +506,8 @@ input[type='submit']{
     font-size: 15px;
     color: #ffffff;
 }
+
+/*Design citations*/
 
 #citations{
     margin: 90px;

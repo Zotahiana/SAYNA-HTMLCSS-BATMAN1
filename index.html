@@ -25,14 +25,16 @@
     <main>
         <!--Les reseaux sociaux avec le scrolling-->
         <div class="scroll">
-            <img class="social" src="./assets/Logos/logo_bat_flèche.png" alt="">
+            <a href="#hero"><img class="social" src="./assets/Logos/logo_bat_flèche.png" alt=""></a>
             <img class="social" src="./assets/Logos/icon_facebook.png" alt="">
             <img class="social" src="./assets/Logos/icon_ig.png" alt="">
             <img class="social" src="./assets/Logos/icon_tw.png" alt="">
-            <img class="social" src="./assets/Logos/logo_bat_flèche_2.png" alt="">
+            <a href="#citations"><img class="social" src="./assets/Logos/logo_bat_flèche_2.png" alt=""></a>
+
+           
         </div>
-        
-        </div>
+    
+
         <!--La première section de la partie - hero-->
         <section id="hero">
             <div class="container">
@@ -61,21 +63,31 @@
                     acteurs d’interpréter l’homme chauve-souris. Voici les trois derniers :</p>
                     <div class="batman-personnage">
                         <div class="batman-item">
-                            <img src="./assets/Illustrations/Bathome2.png" alt="">
+                            <div class="image-container">
+                                <img src="./assets/Illustrations/Bathome2.png" alt="">
+
+                            </div>
+                            
                             <div class="personnage-info">
                                 <h3>Robert Pattinson</h3>
                                 <p>(2022)</p>
                             </div>
                         </div>
                             <div class="batman-item">
+                                <div class="image-container">
                                 <img src="./assets/Illustrations/Bathome3.png" alt="">
+                                </div>
+                                
                                 <div class="personnage-info">
                                     <h3>Christian Bale </h3>
                                     <p>(2006 - 2008 - 2012)</p>
                                 </div>
                             </div>
                                 <div class="batman-item">
+                                    <div class="image-container">
                                     <img src="./assets/Illustrations/Bathome4.png" alt="">
+                                    </div>
+                                    
                                     <div class="personnage-info">
                                         <h3>Ben Affleck</h3>
                                         <p>2016- 2017/2020 - 2023</p>
@@ -102,21 +114,30 @@
                     ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :</p>
                     <div class="némésis-personnage">
                         <div class="némésis-item">
+                            <div class="image-container">
                             <img src="./assets/Illustrations/Bathome5.png" alt="">
+                            </div>
+                            
                            <div class="personnage-info">
                               <h3>The Riddler Paul Dano</h3>
                               <p>(2022)</p>
                            </div> 
                         </div>
                           <div class="némésis-item">
-                             <img src="./assets/Illustrations/Bathome6.png" alt="">
+                            <div class="image-container">
+                            <img src="./assets/Illustrations/Bathome6.png" alt="">
+                            </div>
+                             
                              <div class="personnage-info">
                                 <h3>Le Joker Heath Ledger</h3>
                                 <p>(2008)</p>
                              </div> 
                           </div>
                               <div class="némésis-item">
-                                  <img src="./assets/Illustrations/Bathome7.png" alt="">
+                                <div class="image-container">
+                                <img src="./assets/Illustrations/Bathome7.png" alt="">
+                                </div>
+                                  
                                  <div class="personnage-info">
                                     <h3>Darkseid Ray Porter</h3>
                                     <p>(2022)</p>
@@ -140,21 +161,30 @@
                 nettoyer sa ville de la criminalité qui y règne.</p>
                 <div class="alliés-personnage">
                     <div class="alliés-item">
+                        <div class="image-container">
                         <img src="./assets/Illustrations/Bathome9.png" alt="">
+                        </div>
+                        
                         <div class="personnage-info">
                             <h3>Alfred Pennyworth Michael Cain</h3>
                             <p>(2006 2008 2012)</p>
                         </div>
                     </div>
                         <div class="alliés-item">
+                            <div class="image-container">
                             <img src="./assets/Illustrations/Bathome8.png" alt="">
+                            </div>
+                            
                             <div class="personnage-info">
                                 <h3>Catwoman Zoé Kravitz</h3>
                                 <p>(2008)</p>
                             </div>
                         </div>
                             <div class="alliés-item">
-                                <img src="./assets/Illustrations/Bathome10.png" alt="">
+                                <div class="image-container">
+                                <img src="./assets/Illustrations/Bathome10.png" alt=""> 
+                                </div>
+                                
                                 <div class="personnage-info">
                                     <h3>James Gordon</h3>
                                     <p>(2014 2019)</p>
@@ -174,7 +204,7 @@
                 la Terre, ceux vers qui le monde entier se tourne lorsque les menaces extraterrestres ou 
                 surnaturelles menacent son existence.</p>
             </div>
-            <img width="100%" src="./assets/Illustrations/Bathome11.png" alt="">
+            <img class="justice-league" width="100%" src="./assets/Illustrations/Bathome11.png" alt="">
         </section>
 
         <!--La section multimédia-->
@@ -218,17 +248,17 @@
             <div class="form">
                 <h2>PRENOMS CONTACT</h2>
                 <form action="">
-                    <label class="titre" for="email">ADRESSE EMAIL</label>
+                    <label class="titre" for="email"> <strong>ADRESSE EMAIL</strong></label>
                     <input type="email" name="email" placeholder="Adresse email">
                     <br>
-                    <label for="newsletter">NEWSLETTER</label> <br>
+                    <label for="newsletter"> <strong>NEWSLETTER</strong></label> <br>
                     <br>
                     <label for=""> En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
                         Batman :</label>
                     <input type="checkbox"> 
                       <div>
                         <br>
-                    <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+                        <input type="news" name="news" placeholder="Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter">
 
                     <span class="icon">
                         <img src="./assets/Logos/icon_flèche_2.png" alt="">
@@ -247,7 +277,7 @@
                         <label for="tout">De tout</label>
                     </div>
 
-                    <p class="titre">MESSAGE</p>
+                    <p class="titre"> <strong>MESSAGE</strong></p>
                     <textarea name="" id="" cols="30" placeholder="Laissez un commentaire pour la communauté
                     "></textarea>
                     <input type="submit" value="CONFIRMER"> 
