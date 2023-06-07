@@ -474,6 +474,7 @@ nav ul a:hover{
     display: none;
 }
 
+
 .icon:hover .menu{
     display: inline-block;
     position: absolute;
@@ -481,7 +482,8 @@ nav ul a:hover{
     left: 0px;
     padding: 0px;
     z-index: 1000;
-    cursor: pointer;
+    transition: all 0.3s ease;
+
 }
 
 .menu li{
@@ -489,6 +491,9 @@ nav ul a:hover{
     background: linear-gradient(
          var(--gradient-white), var(--gradient-grey)
     );
+    padding-bottom: 20px;
+    cursor: pointer;
+    
 }
 
 
