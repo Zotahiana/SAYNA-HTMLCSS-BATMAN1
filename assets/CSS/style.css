@@ -458,7 +458,7 @@ nav ul a:hover{
     margin: 20px 0;
     border-bottom: 2px solid rgb(206, 190, 190);
     width: 100%;
-    
+
 }
 
 #contact .icon img{
@@ -469,6 +469,29 @@ nav ul a:hover{
     background: none;
     right: -95%;
 }
+
+#menu{
+    display: none;
+}
+
+.icon:hover .menu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu li{
+    border-bottom: 1px solid;
+    background: linear-gradient(
+         var(--gradient-white), var(--gradient-grey)
+    );
+}
+
+
 ::placeholder{
     color: #ffffff;
 }
