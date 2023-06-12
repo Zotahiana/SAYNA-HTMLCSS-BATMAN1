@@ -48,7 +48,10 @@ body{
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: 887px 2850px;
+  
 }
+
+
 
 .up-bar{
     border-top: #BCBBBD 1px solid;
@@ -61,7 +64,7 @@ body{
 
 .left-bar{
     background-color: #BCBBBD 1px solid;
-    height: 8500px;
+    height: 8300px;
     left: 87%;
     top: 0px;
     border-left: 1px solid #BCBBBD;
@@ -71,7 +74,7 @@ body{
 
 .right-bar{
     background-color: #BCBBBD 1px solid;
-    height: 8500px;
+    height: 8300px;
     right: 85%;
     top: 0px;
     border-left: 1px solid #BCBBBD;
@@ -530,7 +533,12 @@ nav ul a:hover{
         69deg, var(--gradient-white),var(--gradient-grey)
     ) 1;
     font-size: 12px;
+    opacity: 40%;
     
+}
+
+.btn-group label:hover{
+    opacity: 100%;
 }
 
 input[type='submit']{
@@ -585,7 +593,13 @@ input[type='submit']{
     text-decoration: none;
 }
 
-   
+input[type="submit"]:hover {
+    background: linear-gradient(
+        10deg,var(--white-color), var(--gradient-red)
+
+    );
+}
+  
 
 
 /*Design citations*/
