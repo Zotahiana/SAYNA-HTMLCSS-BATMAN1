@@ -61,7 +61,7 @@ body{
 
 .left-bar{
     background-color: #BCBBBD 1px solid;
-    height: 8000px;
+    height: 8500px;
     left: 87%;
     top: 0px;
     border-left: 1px solid #BCBBBD;
@@ -71,7 +71,7 @@ body{
 
 .right-bar{
     background-color: #BCBBBD 1px solid;
-    height: 8000px;
+    height: 8500px;
     right: 85%;
     top: 0px;
     border-left: 1px solid #BCBBBD;
@@ -119,6 +119,7 @@ nav ul a{
 nav ul a:hover{
      color: var(--yellow-color);
 }
+
 
 /*Design de la partie en tête Hero */
 
@@ -468,6 +469,7 @@ nav ul a:hover{
     position: relative;
     background: none;
     right: -95%;
+    
 }
 
 #menu{
@@ -476,13 +478,19 @@ nav ul a:hover{
 
 
 .icon:hover .menu{
-    display: inline-block;
-    position: absolute;
-    top: 100%;
-    left: 0px;
-    padding: 0px;
-    z-index: 1000;
+    display: block;
+    position: relative;
     transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu{
+    display: flex;
+    position: absolute;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
 
 }
 
@@ -495,7 +503,8 @@ nav ul a:hover{
     padding-bottom: 10px;
     padding: 1em 1em;
     cursor: pointer;
-    
+    display: block;
+
 }
 
 
@@ -507,6 +516,7 @@ nav ul a:hover{
     display: flex;
     justify-content: space-around;
 }
+
 
 .form input[type='radio']{
     opacity: 0;
@@ -539,7 +549,7 @@ input[type='submit']{
 }
 
 #submit:target{
-    visibility: hidden;
+    visibility: visible;
     opacity: 1;
 }
 
