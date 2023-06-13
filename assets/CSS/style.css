@@ -541,7 +541,7 @@ nav ul a:hover{
     opacity: 100%;
 }
 
-input[type='submit']{
+.pop a{
     display: block;
     width: 230px;
     margin: 70px auto;
@@ -551,9 +551,10 @@ input[type='submit']{
     background: linear-gradient(
         50deg,var(--white-color), var(--gradient-red)
     );
-    font-size: 15px;
+    font-size: 20px;
     color: #ffffff;
-    
+    text-align: center;
+    text-decoration: none;
 }
 
 #submit:target{
@@ -581,9 +582,8 @@ input[type='submit']{
     visibility: hidden;
     opacity: 0;
     
+    
 }
-
-
 
 .submit_close{
     position: absolute;
